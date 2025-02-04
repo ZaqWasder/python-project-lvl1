@@ -12,3 +12,6 @@ package-install:
 
 package-uninstall:
 	uv tool uninstall hexlet-code
+
+lint:
+	uv run ruff check brain_games
