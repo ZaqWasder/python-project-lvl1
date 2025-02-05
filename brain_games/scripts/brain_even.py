@@ -1,8 +1,6 @@
 from random import randint
 
-import prompt
-
-from brain_games.cli import welcome_user
+import brain_games.cli as cli
 
 
 def print_rules():
@@ -16,7 +14,7 @@ def start_stage_of_game(user_name: str) -> bool:
     correct_answer = "yes" if random_number % 2 == 0 else "no"
 
     print(f"Question: {random_number}")
-    answer = prompt.string("Your answer: ")
+    answer = cli.prompt.string("Your answer: ")
 
     if answer == correct_answer:
         print("Correct!")
@@ -45,7 +43,7 @@ def start_game(user_name: str, answers_for_win: int):
 
 
 def main():
-    user_name = welcome_user()
+    user_name = cli.welcome_user()
     print_rules()
     start_game(user_name, 3)
 
