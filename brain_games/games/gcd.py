@@ -11,7 +11,7 @@ def get_challenge():
     question = f'{first_num} {second_num}'
     answer = get_gcd(first_num, second_num)
 
-    return (question, answer)
+    return (question, str(answer))
 
 
 def get_gcd(first_num, second_num):

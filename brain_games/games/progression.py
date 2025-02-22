@@ -32,4 +32,4 @@ def get_challenge():
     question = ' '.join(map(str, progression))
     answer = hidden_elem
 
-    return (question, answer)
+    return (question, str(answer))

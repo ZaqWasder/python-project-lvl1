@@ -6,7 +6,7 @@ GAMES_COUNT = 3
 
 
 def get_user_answer():
-    return int(prompt.string('Your answer: '))
+    return prompt.string('Your answer: ')
 
 
 def print_question(question: str):

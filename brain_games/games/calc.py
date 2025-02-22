@@ -12,7 +12,7 @@ def get_challenge():
     operator = choice(OPERATORS)
     question = f'{first_operand} {operator} {second_operand}'
     answer = get_answer(first_operand, second_operand, operator)
-    return (question, answer)
+    return (question, str(answer))
 
 
 def get_answer(first_operand, second_operand, operator):
