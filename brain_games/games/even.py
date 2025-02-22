@@ -4,6 +4,7 @@ MIN_NUMBER = 1
 MAX_NUMBER = 100
 RULES = 'Answer "yes" if the number is even, otherwise answer "no".'
 
+
 def get_challenge():
     question = randint(MIN_NUMBER, MAX_NUMBER)
     answer = get_answer(question)
