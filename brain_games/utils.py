@@ -1,4 +1,5 @@
 import prompt
+
 import brain_games.cli as cli
 
 GAMES_COUNT = 3
